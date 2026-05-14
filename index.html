@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Healing With Aman — Premium Proposal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#fffdf8;
+color:#6c6258;
+overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,#fff1cf 0%,transparent 30%),
+radial-gradient(circle at bottom right,#ffd972 0%,transparent 28%),
+#fffdf8;
+z-index:-10;
+}
+
+/* GLOBAL */
+
+section{
+padding:90px 6%;
+}
+
+.container{
+max-width:1320px;
+margin:auto;
+}
+
+.glass{
+background:rgba(255,255,255,.78);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,204,102,.12);
+border-radius:42px;
+padding:70px 55px;
+box-shadow:0 25px 60px rgba(255,205,100,.08);
+}
+
+.tag{
+display:inline-flex;
+padding:12px 22px;
+border-radius:999px;
+background:white;
+border:1px solid rgba(255,204,102,.12);
+font-size:10px;
+letter-spacing:4px;
+color:#d4972e;
+}
+
+.title{
+text-align:center;
+margin-bottom:55px;
+}
+
+.title h2{
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+line-height:1;
+margin:24px 0;
+color:#82663f;
+}
+
+.title p{
+max-width:760px;
+margin:auto;
+font-size:17px;
+line-height:1.9;
+}
+
+.btn{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:18px 34px;
+border-radius:999px;
+text-decoration:none;
+font-size:11px;
+letter-spacing:2px;
+background:linear-gradient(135deg,#ffd56f,#ffbb4d);
+color:white;
+box-shadow:0 18px 35px rgba(255,190,70,.25);
+transition:.35s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:14px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+max-width:1260px;
+padding:16px 28px;
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+border-radius:999px;
+border:1px solid rgba(255,204,102,.1);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+font-weight:600;
+color:#7c633c;
+}
+
+.nav-links{
+display:flex;
+gap:24px;
+}
+
+.nav-links a{
+text-decoration:none;
+font-size:11px;
+letter-spacing:2px;
+color:#aa7d37;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:180px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:108px;
+line-height:.92;
+max-width:1050px;
+margin:30px auto;
+color:#7b6540;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+font-size:18px;
+line-height:1.9;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+/* QUOTE */
+
+.quote{
+text-align:center;
+padding:110px 7%;
+}
+
+.quote h3{
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+line-height:1.2;
+max-width:920px;
+margin:auto;
+color:#8a6a3b;
+}
+
+/* GRID */
+
+.grid-3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:26px;
+}
+
+.card{
+background:white;
+padding:36px;
+border-radius:32px;
+border:1px solid rgba(255,204,102,.1);
+transition:.4s;
+animation:float 5s ease-in-out infinite;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 40px rgba(255,210,100,.12);
+}
+
+.card:nth-child(2){
+animation-delay:1s;
+}
+
+.card:nth-child(3){
+animation-delay:2s;
+}
+
+.card:nth-child(4){
+animation-delay:1.5s;
+}
+
+.card:nth-child(5){
+animation-delay:2.5s;
+}
+
+.card:nth-child(6){
+animation-delay:.5s;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}
+
+.icon{
+width:84px;
+height:84px;
+border-radius:26px;
+background:linear-gradient(135deg,#ffe08f,#ffc454);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+margin-bottom:26px;
+}
+
+.card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:54px;
+line-height:.95;
+margin-bottom:18px;
+color:#7b6540;
+}
+
+.card p{
+font-size:16px;
+line-height:1.9;
+}
+
+/* PRICE */
+
+.price-layout{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+align-items:start;
+}
+
+.price-card{
+background:white;
+padding:42px;
+border-radius:38px;
+border:1px solid rgba(255,204,102,.12);
+position:relative;
+overflow:hidden;
+transition:.35s;
+}
+
+.price-card:hover{
+transform:translateY(-8px);
+box-shadow:0 22px 50px rgba(255,205,100,.14);
+}
+
+.recommended{
+border:2px solid #ffc74f;
+transform:scale(1.03);
+}
+
+.badge{
+position:absolute;
+top:0;
+left:50%;
+transform:translateX(-50%);
+padding:13px 24px;
+border-radius:0 0 18px 18px;
+background:linear-gradient(135deg,#ffd56f,#ffbb4d);
+color:white;
+font-size:10px;
+letter-spacing:2px;
+}
+
+.plan{
+font-size:11px;
+letter-spacing:2px;
+color:#cf9533;
+margin-top:16px;
+}
+
+.price{
+font-family:'Cormorant Garamond',serif;
+font-size:84px;
+line-height:1;
+margin:20px 0 8px;
+color:#7b6540;
+}
+
+.price-sub{
+font-size:16px;
+line-height:1.7;
+color:#9b7440;
+margin-bottom:20px;
+}
+
+.desc{
+font-size:16px;
+line-height:1.9;
+margin-bottom:26px;
+}
+
+.features div{
+padding:14px 0;
+border-bottom:1px solid rgba(255,204,102,.1);
+font-size:15px;
+line-height:1.8;
+}
+
+.quote-box{
+background:#fff8ea;
+padding:18px;
+border-radius:20px;
+margin-top:24px;
+font-size:14px;
+line-height:1.8;
+color:#a3732d;
+}
+
+.card-btn{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:26px;
+padding:18px;
+border-radius:999px;
+background:linear-gradient(135deg,#ffd56f,#ffbb4d);
+text-decoration:none;
+color:white;
+font-size:11px;
+letter-spacing:2px;
+}
+
+/* WEBSITE */
+
+.website-price{
+text-align:center;
+margin-bottom:50px;
+}
+
+.website-price h1{
+font-family:'Cormorant Garamond',serif;
+font-size:96px;
+color:#7b6540;
+line-height:1;
+}
+
+.website-price p{
+font-size:18px;
+line-height:1.8;
+color:#9b7440;
+max-width:700px;
+margin:10px auto 0;
+}
+
+/* TIMELINE */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+margin-top:40px;
+}
+
+.timeline-card{
+background:white;
+padding:34px;
+border-radius:30px;
+text-align:center;
+border:1px solid rgba(255,204,102,.1);
+transition:.35s;
+animation:float 6s ease-in-out infinite;
+}
+
+.timeline-card:nth-child(2){
+animation-delay:1s;
+}
+
+.timeline-card:nth-child(3){
+animation-delay:2s;
+}
+
+.timeline-card:nth-child(4){
+animation-delay:3s;
+}
+
+.timeline-card:hover{
+transform:translateY(-10px);
+}
+
+.timeline-card span{
+font-size:38px;
+display:block;
+margin-bottom:18px;
+}
+
+.timeline-card h4{
+font-family:'Cormorant Garamond',serif;
+font-size:46px;
+margin-bottom:16px;
+color:#7b6540;
+}
+
+.timeline-card p{
+font-size:15px;
+line-height:1.9;
+}
+
+/* FINAL */
+
+.final{
+text-align:center;
+}
+
+.final h2{
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+line-height:1;
+max-width:950px;
+margin:24px auto;
+color:#7b6540;
+}
+
+.final p{
+max-width:760px;
+margin:auto;
+font-size:17px;
+line-height:1.9;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+section{
+padding:60px 16px;
+}
+
+.glass{
+padding:34px 22px;
+border-radius:28px;
+}
+
+nav{
+padding:14px 16px;
+border-radius:28px;
+flex-direction:column;
+gap:10px;
+top:10px;
+}
+
+.logo{
+font-size:28px;
+}
+
+.nav-links{
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-links a{
+font-size:9px;
+}
+
+.hero{
+padding-top:240px;
+padding-bottom:70px;
+min-height:auto;
+}
+
+.hero h1{
+font-size:50px;
+line-height:1.03;
+}
+
+.hero p{
+font-size:14px;
+line-height:1.8;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+font-size:10px;
+padding:16px 24px;
+}
+
+.title h2{
+font-size:42px;
+line-height:1.06;
+}
+
+.title p{
+font-size:14px;
+line-height:1.8;
+}
+
+.quote h3{
+font-size:36px;
+}
+
+.grid-3,
+.price-layout,
+.timeline{
+grid-template-columns:1fr;
+}
+
+.card{
+padding:28px;
+}
+
+.card h3{
+font-size:42px;
+}
+
+.price-card{
+padding:30px 24px;
+}
+
+.recommended{
+transform:none;
+padding-top:72px;
+}
+
+.badge{
+width:210px;
+text-align:center;
+font-size:9px;
+}
+
+.price{
+font-size:64px;
+}
+
+.price-sub{
+font-size:14px;
+}
+
+.website-price h1{
+font-size:74px;
+}
+
+.website-price p{
+font-size:15px;
+}
+
+.timeline-card h4{
+font-size:38px;
+}
+
+.final h2{
+font-size:46px;
+line-height:1.05;
+}
+
+.final p{
+font-size:14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<div class="logo">
+Healing With Aman
+</div>
+
+<div class="nav-links">
+<a href="#logo">Logo</a>
+<a href="#social">Social</a>
+<a href="#website">Website</a>
+<a href="#bonus">Bonuses</a>
+<a href="#journey">Journey</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="tag">
+PREMIUM DIGITAL EXPERIENCE
+</div>
+
+<h1>
+Healing Deserves A Beautiful Digital Presence
+</h1>
+
+<p>
+A soulful digital experience intentionally designed to help Healing With Aman feel trustworthy, calming, emotionally aligned and unforgettable online.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20just%20reviewed%20the%20proposal%20for%20Healing%20With%20Aman%20and%20would%20love%20to%20move%20forward."
+target="_blank">
+
+Explore The Vision ✨
+
+</a>
+
+<a class="btn"
+href="#social">
+
+See Growth Plans ☀️
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<h3>
+“People don’t connect with perfect brands. They connect with energy that feels safe, beautiful and real.”
+</h3>
+
+</section>
+
+<!-- LOGO -->
+
+<section id="logo">
+
+<div class="container glass">
+
+<div class="title">
+
+<div class="tag">
+SIGNATURE LOGO DESIGN
+</div>
+
+<h2>
+Creating A Spiritual Identity People Emotionally Remember
+</h2>
+
+<p>
+A deeply intentional logo creation process designed specifically around Aman’s healing energy, audience psychology and long-term spiritual brand identity.
+</p>
+
+</div>
+
+<div class="website-price">
+
+<h1>
+₹7.5K
+</h1>
+
+<p>
+A one-time premium identity investment crafted to create emotional connection, trust and long-term brand recognition.
+</p>
+
+</div>
+
+<div class="grid-3">
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Research & Strategy</h3>
+<p>Deep spiritual positioning and audience psychology research before design begins.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌙</div>
+<h3>4–5 Concepts</h3>
+<p>Multiple premium logo directions crafted around Aman’s emotional brand energy.</p>
+</div>
+
+<div class="card">
+<div class="icon">☀️</div>
+<h3>Typography</h3>
+<p>Elegant typography styling intentionally designed around calm healing aesthetics.</p>
+</div>
+
+<div class="card">
+<div class="icon">💫</div>
+<h3>Revisions</h3>
+<p>Collaborative refinement rounds ensuring emotionally aligned final results.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌻</div>
+<h3>Color Direction</h3>
+<p>Warm and calming color psychology crafted intentionally for trust and connection.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤍</div>
+<h3>Export Kit</h3>
+<p>High-resolution logo files for Instagram, website, future branding and premium usage.</p>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:50px;">
+
+<a class="btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20would%20love%20to%20move%20forward%20with%20the%20Logo%20Design%20Proposal%20for%20Healing%20With%20Aman."
+target="_blank">
+
+Let’s Build Aman’s Identity ✨
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOCIAL -->
+
+<section id="social">
+
+<div class="container">
+
+<div class="title">
+
+<div class="tag">
+SOCIAL MEDIA GROWTH PLANS
+</div>
+
+<h2>
+Building Trust Through Beautiful Content
+</h2>
+
+<p>
+Premium content systems designed to attract, nurture and emotionally connect with the right healing audience consistently.
+</p>
+
+</div>
+
+<div class="price-layout">
+
+<!-- 12K -->
+
+<div class="price-card">
+
+<div class="plan">
+FOUNDATION PRESENCE PLAN
+</div>
+
+<div class="price">
+₹12K
+</div>
+
+<div class="price-sub">
+A beautiful starting point to establish consistency, trust and a calming premium online presence.
+</div>
+
+<div class="features">
+
+<div>✦ 3 Premium Static Posts</div>
+<div>✦ 3 Reels Crafted For Engagement</div>
+<div>✦ 3 Story Designs</div>
+<div>✦ 1 DSLR Shoot Session</div>
+<div>✦ Caption Writing Included</div>
+<div>✦ Premium Visual Direction</div>
+
+</div>
+
+<div class="quote-box">
+“Consistency creates trust. Trust creates healing connections.”
+</div>
+
+<a class="card-btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20would%20love%20to%20go%20ahead%20with%20the%2012K%20Foundation%20Presence%20Plan."
+target="_blank">
+
+This Feels Aligned ✨
+
+</a>
+
+</div>
+
+<!-- 18K -->
+
+<div class="price-card recommended">
+
+<div class="badge">
+MOST RECOMMENDED ✨
+</div>
+
+<div class="plan">
+BRAND ELEVATION PLAN
+</div>
+
+<div class="price">
+₹18K
+</div>
+
+<div class="price-sub">
+Designed to position Healing With Aman as a premium healing authority with stronger visibility and deeper audience trust.
+</div>
+
+<div class="features">
+
+<div>✦ 5 Premium Static Posts</div>
+<div>✦ 5 High-Impact Reels</div>
+<div>✦ 5 Story Designs</div>
+<div>✦ DSLR + Mobile Shoot</div>
+<div>✦ Strategic Content Direction</div>
+<div>✦ Viral Reel Structuring</div>
+<div>✦ Premium Brand Positioning</div>
+
+</div>
+
+<div class="quote-box">
+“A powerful presence makes people trust before they even message.”
+</div>
+
+<a class="card-btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20would%20love%20to%20move%20forward%20with%20the%2018K%20Brand%20Elevation%20Plan."
+target="_blank">
+
+I’m Ready To Grow ☀️
+
+</a>
+
+</div>
+
+<!-- 25K -->
+
+<div class="price-card">
+
+<div class="plan">
+SIGNATURE AUTHORITY PLAN
+</div>
+
+<div class="price">
+₹25K
+</div>
+
+<div class="price-sub">
+A dominant daily content ecosystem designed to build visibility, authority and long-term audience growth.
+</div>
+
+<div class="features">
+
+<div>✦ Daily Content Presence</div>
+<div>✦ 8 Premium Posts</div>
+<div>✦ 8 High-Impact Reels</div>
+<div>✦ 8 Story Designs</div>
+<div>✦ ₹3,000 Paid Promotion Included</div>
+<div>✦ Audience Growth Strategy</div>
+<div>✦ Full Brand Authority Positioning</div>
+
+</div>
+
+<div class="quote-box">
+“When people repeatedly see your energy, they begin to trust your healing.”
+</div>
+
+<a class="card-btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20would%20love%20to%20move%20forward%20with%20the%2025K%20Signature%20Authority%20Plan."
+target="_blank">
+
+This Is My Vision 🌞
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WEBSITE -->
+
+<section id="website">
+
+<div class="container glass">
+
+<div class="title">
+
+<div class="tag">
+PREMIUM WEBSITE EXPERIENCE
+</div>
+
+<h2>
+A Calm Digital Sanctuary For Healing With Aman
+</h2>
+
+<p>
+A complete premium digital ecosystem intentionally designed to create trust, emotional safety and seamless healing experiences online.
+</p>
+
+</div>
+
+<div class="website-price">
+
+<h1>
+₹23K
+</h1>
+
+<p>
+A fully customized premium website experience crafted to elevate Healing With Aman into a trusted digital healing brand.
+</p>
+
+</div>
+
+<div class="grid-3">
+
+<div class="card">
+<div class="icon">☀️</div>
+<h3>Home Page</h3>
+<p>A warm and emotionally welcoming first impression.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>About Page</h3>
+<p>A soulful storytelling section sharing Aman’s healing journey.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌙</div>
+<h3>Services Page</h3>
+<p>Beautifully structured healing offerings and experiences.</p>
+</div>
+
+<div class="card">
+<div class="icon">💫</div>
+<h3>Testimonials</h3>
+<p>Trust-building social proof and client transformation stories.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌻</div>
+<h3>Courses Page</h3>
+<p>Premium learning experiences and spiritual transformation programs.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤍</div>
+<h3>Products Page</h3>
+<p>A calming shopping experience for wellness and spiritual offerings.</p>
+</div>
+
+<div class="card">
+<div class="icon">☁️</div>
+<h3>Customer Login</h3>
+<p>Private healing dashboard and personalized client experience.</p>
+</div>
+
+<div class="card">
+<div class="icon">📲</div>
+<h3>WhatsApp Integration</h3>
+<p>Direct seamless communication and inquiry experience.</p>
+</div>
+
+<div class="card">
+<div class="icon">💳</div>
+<h3>Booking & Payments</h3>
+<p>Integrated appointments, tracking and secure online payment systems.</p>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:50px;">
+
+<a class="btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20I%20would%20love%20to%20move%20forward%20with%20the%20Premium%20Website%20Experience."
+target="_blank">
+
+Create Aman’s Digital Sanctuary ✨
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BONUS -->
+
+<section id="bonus">
+
+<div class="container glass">
+
+<div class="title">
+
+<div class="tag">
+FREE BONUSES INCLUDED
+</div>
+
+<h2>
+₹10,000+ Additional Value Included Free
+</h2>
+
+<p>
+To ensure Healing With Aman launches beautifully without worrying about hidden setup costs.
+</p>
+
+</div>
+
+<div class="grid-3">
+
+<div class="card">
+<div class="icon">☀️</div>
+<h3 style="font-size:42px;">Free Hosting</h3>
+<p>
+Premium high-speed hosting included completely free for a smooth and secure launch experience.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3 style="font-size:42px;">Security Certificate</h3>
+<p>
+Advanced SSL security setup included to create trust, protection and a professional experience.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🌙</div>
+<h3 style="font-size:42px;">SEO Friendly Setup</h3>
+<p>
+Search optimized website structure helping Healing With Aman become easier to discover online.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💫</div>
+<h3 style="font-size:42px;">Technical Support</h3>
+<p>
+Continued post-launch support ensuring everything runs beautifully and stress-free.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🌻</div>
+<h3 style="font-size:42px;">Booking Integration</h3>
+<p>
+Smooth appointment scheduling system integrated for effortless client booking experiences.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤍</div>
+<h3 style="font-size:42px;">Mobile Optimization</h3>
+<p>
+A premium mobile-first experience crafted beautifully for users viewing from their phones.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- TIMELINE -->
+
+<section id="journey">
+
+<div class="container glass">
+
+<div class="title">
+
+<div class="tag">
+LAUNCH JOURNEY
+</div>
+
+<h2>
+A Calm & Guided Creation Process
+</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-card">
+
+<span>🌙</span>
+
+<h4>
+Discovery
+</h4>
+
+<p>
+Understanding Aman’s vision, healing philosophy and emotional brand direction.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<span>✨</span>
+
+<h4>
+Design
+</h4>
+
+<p>
+Crafting the premium visual identity, content direction and website aesthetics.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<span>☀️</span>
+
+<h4>
+Development
+</h4>
+
+<p>
+Building the complete digital ecosystem, systems and seamless client journey.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<span>💫</span>
+
+<h4>
+Launch
+</h4>
+
+<p>
+Final optimization, beautiful launch experience and continued technical support.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section>
+
+<div class="container glass final">
+
+<div class="tag">
+EXCLUSIVELY CREATED FOR HEALING WITH AMAN
+</div>
+
+<h2>
+This Proposal Was Intentionally Crafted Specifically For Healing With Aman
+</h2>
+
+<p>
+Every detail — from the typography, colors, structure and experience — has been intentionally designed to help Healing With Aman feel premium, trustworthy, calming and emotionally unforgettable online.
+</p>
+
+<div style="margin-top:42px;">
+
+<a class="btn"
+href="https://wa.me/919099245605?text=Hi%20✨%20After%20reviewing%20everything,%20I%20would%20love%20to%20move%20forward%20with%20Healing%20With%20Aman."
+target="_blank">
+
+Let’s Begin This Beautiful Journey ✨
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
